@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイズ、位置</title>
+    <meta name="description" content="width height position">
+    <style>
+        body{
+            background-color: white;
+            width: 1000px;
+            height: 3000px;
+            position: relative;
+        }
+        h1{
+            background-color: purple;
+            width: 1000px;
+            height: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>サイズ、位置の確認</h1>
+    <!--親をdivに指定-->
+    <div style="background-color: red; width: 1000px; height: 1000px; position: absolute; top: 100px; left: 0px;">
+        <h2 style="background-color: yellow; width: 1000px; height: 100px;">
+            サイズについて
+        </h2>
+        <p style="background-color: blue; width: 500px; height: 200px;">
+            サイズ１ w500px h200px
+        </p>
+        <p style="background-color: green; width: 40%; height: 30%;">
+            サイズ２ w40% h30%
+        </p>
+        <p style="background-color: gray; width: 50%; height: 30%;">
+            divを親要素、pを子要素にしてサイズ１ではpxでサイズ２では%指定
+            テキストを入力している場合、テキストボックスのサイズをしている
+            ことになる<br/>
+            指定したサイズをテキストが超えた場合、改行される
+        </p>
+    </div>
+    <!--なんで上に余白できる？-->>
+    <div style="background-color: pink; position: absolute; top: 1100px; left: 0px; width: 1000px; height: 1000px;">
+        <h2 style="background-color: yellow; position: static; top: 0px; left: 0px; width: 100%; height: 100px;">
+            位置について
+        </h2>
+        <p style="background-color: blue; position: absolute; top: 100px; left: 0px; width: 700px; height: 200px;">
+            位置１<br/>
+            static→親に対して左上（デフォルト位置）に固定　※親にはつけたらダメ<br/>
+            relative→親に対してのデフォルト位置から相対的に移動<br/>
+            absolute→親に対しての絶対的な位置指定<br/>
+            fixed→ブラウザウィンドウに対しての位置指定
+        </p>
+        <p style="background-color: aquamarine; position: relative; top: 600px; left: 300px; width: 200px; height: 100px;">
+            relativeでの位置指定
+        </p>
+    </div>
+    <div style="background-color: gold; position: fixed; top: 700px; left: 500px; width: 100px; height: 100px;">
+        <p>position fixed</p>
+    </div>
+</body>
+</html>

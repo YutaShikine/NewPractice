@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webPractice</title>
+    <meta name="description" content="webPractice">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body id="main">
+    <!-- タイトル -->
+    <h1 id="topheading">class、idについて</h1>
+    <!-- 大問2:文字列 --------------------------------------------->
+    <div id="nice">
+    <h2 class="heading">大問２：文字列</h2>
+    <!-- strike.斜線いれる -->
+    <p class="apple"> <strike>朝ごはんは卵かけご飯</strike></p>
+    <p class="apple">昼ごはんは天ぷらそば</p>
+    <!-- bタブ.太字にする -->
+    <p class="apple"><b>夜ごはんは焼肉</b></p>
+    <!-- 順不同リスト -->
+    <ul class="list">
+        <li class="banana">カルビ</li>
+        <li class="banana">ハラミ</li>
+        <li class="banana">タン</li>
+        <li class="banana">レバー</li>
+    </ul>
+    <!-- 順番があるリスト -->
+    <ol class="list">
+        <li class="banana">タイ</li>
+        <li class="banana">ブリ</li>
+        <li class="banana">マグロ</li>
+        <li class="banana">タコ</li>
+    </ol>
+    </div>
+    <!------------------------------------------------------------>
+    <!-- 大問3:画像系 --------------------------------------------->
+    <div id="great">
+        <h2 class="heading">大問３：画像系</h2>
+        <!-- 画像を貼る alt.画像の説明 width.画像の物理的な大きさの指定（横） -->
+        <img id="jpg" src="./img1st.jpg" alt="スト６の画像" width="450">
+        <!-- 動画を貼る controls.再生ボタンの設置 width.物理的な動画サイズの指定(横) -->
+        <video id="mp4" src="./mp4file.mp4" controls width="450"></video>
+    </div>
+    <!------------------------------------------------------------>
+    <!-- 大問4:入力系 --------------------------------------------->
+    <div id="excellent">
+        <h2 class="heading">大問４：入力系</h2>
+        <!-- 文字の入力 -->
+        <p class="apple">文字列</p>
+        <input type="text" class="text"/>
+        <!-- 数字のみの入力 -->
+        <p class="apple">数値</p>
+        <input type="number" class="text" />
+        <!-- ファイルのアップロード -->
+        <p class="apple">画像、動画</p>
+        <input type="file" id="movie"/>
+        <!-- ボタンの設置 valueでボタンの中に文字入れる -->
+        <p class="apple">ボタン</p>
+        <input type="button" value="ここをクリック" class="button"/>
+    </div>
+    <!------------------------------------------------------------>
+    <!-- 大問5:その他 --------------------------------------------->
+    <div id="perfect">
+        <h2 class="heading">大問５：その他</h2>
+        <p>別ページとぶボタン</p>
+        <!-- ボタンの設置 value.ボタンの中の文字 onclick.ボタン押すと反応する location.hrefボタン押したときの飛ばす場所の指定 -->
+        <input type="button" value="5億年ボタン" onclick="location.href='./subpage.html'" class="button">
+        <!-- table.表全体の範囲 border.枠線つける bordercolor.枠線に色付ける width.height.表全体の大きさの指定（横.縦） -->
+        <table border="5" bordercolor="red" width="450" height="500" id="table">
+            <tr id="parent">
+                <!-- 表の見出し colspan.セルを横にx個つなげる align.物理的なデータの表記位置の指定 -->
+                <th colspan="9" align="center">九九表</th>
+            </tr>
+            <!-- 表の行 align.trで囲まれている範囲すべての物理的なデータ位置の指定 bgcolor.セルに色を付ける -->
+            <tr align="center" bgcolor="yellow" class="child">
+                <!-- データを書き込む width.セルごとの物理的な大きさの指定(横) -->
+                <td width="50">1</td>
+                <td width="50">2</td>
+                <td width="50">3</td>
+                <td width="50">4</td>
+                <td width="50">5</td>
+                <td width="50">6</td>
+                <td width="50">7</td>
+                <td width="50">8</td>
+                <td width="50">9</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">2</td>
+                <td width="50">4</td>
+                <td width="50">6</td>
+                <td width="50">8</td>
+                <td width="50">10</td>
+                <td width="50">12</td>
+                <td width="50">14</td>
+                <td width="50">16</td>
+                <td width="50">18</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">3</td>
+                <td width="50">6</td>
+                <td width="50">9</td>
+                <td width="50">12</td>
+                <td width="50">15</td>
+                <td width="50">18</td>
+                <td width="50">21</td>
+                <td width="50">24</td>
+                <td width="50">27</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">4</td>
+                <td width="50">8</td>
+                <td width="50">12</td>
+                <td width="50">16</td>
+                <td width="50">20</td>
+                <td width="50">24</td>
+                <td width="50">28</td>
+                <td width="50">32</td>
+                <td width="50">36</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">5</td>
+                <td width="50">10</td>
+                <td width="50">15</td>
+                <td width="50">20</td>
+                <td width="50">25</td>
+                <td width="50">30</td>
+                <td width="50">35</td>
+                <td width="50">40</td>
+                <td width="50">45</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">6</td>
+                <td width="50">12</td>
+                <td width="50">18</td>
+                <td width="50">24</td>
+                <td width="50">30</td>
+                <td width="50">36</td>
+                <td width="50">42</td>
+                <td width="50">48</td>
+                <td width="50">54</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">7</td>
+                <td width="50">14</td>
+                <td width="50">21</td>
+                <td width="50">28</td>
+                <td width="50">35</td>
+                <td width="50">42</td>
+                <td width="50">49</td>
+                <td width="50">56</td>
+                <td width="50">63</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">8</td>
+                <td width="50">16</td>
+                <td width="50">24</td>
+                <td width="50">32</td>
+                <td width="50">40</td>
+                <td width="50">48</td>
+                <td width="50">56</td>
+                <td width="50">64</td>
+                <td width="50">72</td>
+            </tr>
+            <tr align="center" class="child">
+                <td bgcolor="yellow" width="50">9</td>
+                <td width="50">18</td>
+                <td width="50">27</td>
+                <td width="50">36</td>
+                <td width="50">45</td>
+                <td width="50">54</td>
+                <td width="50">63</td>
+                <td width="50">72</td>
+                <td width="50">81</td>
+            </tr>
+        </table>
+    </div>
+    <!------------------------------------------------------------>
+</body>
+</html>

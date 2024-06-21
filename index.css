@@ -1,0 +1,108 @@
+/* 文字化け対策 */
+@charset "UTF-8";
+
+#main{
+    width: 1000px;
+    height: 3000px;
+    position: relative;
+}
+#topheading{
+    width: 1000px;
+    height: auto;
+    position: static;
+    font-weight: bold;
+    text-align: center;
+}
+.heading{
+    width: 1000px;
+    height: 50px;
+    position: static;
+    text-align: center;
+}
+#nice{
+    width: 1000px;
+    height: 400px;
+    position: relative;
+}
+.apple{
+    width: 1000px;
+    height: auto;
+    position: static;
+    color: red;
+}
+.list{
+    width: 1000px;
+    height: auto;
+    position: relative;
+    background-color: blue;
+    color: white;
+}
+.banana{
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+#great{
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+#jpg{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 350px
+}
+#mp4{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 250px;
+}
+#excellent{
+    width: 1000px;
+    height: 1200px;
+    position: relative;
+}
+.text{
+    width: 300px;
+    height: 200px;
+    position: static;
+}
+#movie{
+    width: 300px;
+    height: auto;
+    position: static;
+}
+.button{
+    width: 150px;
+    height: 30px;
+    position: relative;
+}
+#perfect{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+#table{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: auto;
+    left: 300px;
+}
+#parent{
+    width: 400px;
+    height: auto;
+    position: relative;
+    color: blue;
+    font-weight: bold;
+}
+.child{
+    width: 400px;
+    height: auto;
+    position: relative;
+    color: pink;
+}

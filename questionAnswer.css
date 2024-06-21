@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid #000000;
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+th{
+    border:1px solid #000000;
+    background-color:#808080;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+td{
+    border:1px solid #000000;
+}
+
+.question{
+    width: 35%;
+}
+
+.questionNumber{
+    text-align: center;
+    width: 5%;
+}
+
+.answer{
+    width: 30%;
+}
+
+td.answer{
+    padding: 5px;
+}
+
+.another{
+    width: 30%;
+}
+
+td.another{
+    padding: 5px;
+}

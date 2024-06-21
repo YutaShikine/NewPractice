@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質問回答</title>
+    <meta name="description" content="質問回答">
+    <link rel="stylesheet" href="questionAnswer.css">
+</head>
+<body style="margin-bottom: 20px;">
+    <div style="width:98%;padding:0px;margin-top: 25px;" align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="question">質問内容(サイズ、位置)</th>
+                    <th class="answer">回答</th>
+                    <th class="another">その他</th>
+                </tr>
+                <tr>
+                    <td class="questionNumber">1</td>
+                    <td class="question">親要素に対してのサイズ指定の際、pxと%の使い分けの場面</td>
+                    <td class="answer">
+                        px:ブラウザサイズに関係なく表示したい時<br>
+                        % :ブラウザサイズに対して固定の大きさで表示したい時
+                    </td>
+                    <td class="another">
+                        px:ブラウザサイズに関係なく指定したサイズで表示される<br>
+                        　 (ブラウザサイズが指定したサイズを下回ったら見切れる)<br>
+                        % :ブラウザサイズに対して指定した%サイズで表示される<br>
+                        　 (ブラウザサイズによって表示崩れ起きる場合あるけど基本的にこっち)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">bodyを親にしてdivを子にした時、子になったdivをさらに中のpの親にしてもよいのか</td>
+                    <td class="answer">全然問題なし</td>
+                    <td class="another">前提としてdiv内に各要素の配置をしてくから必然的にdivが親になる</td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">3</td>
+                    <td class="question">
+                        divを親にした際、子の位置をabsolute top 0pxにしたのに上に余白ができるのはなぜか<br>
+                        (html内にコメントで記載している部分)
+                    </td>
+                    <td class="answer">h要素に対してデフォルトでmarginがかかっているから</td>
+                    <td class="another">余白なくしたいなら"margin:0px;"いれてみよう</td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">4</td>
+                    <td>absoluteとrelativeの使い分け</td>
+                    <td class="answer">
+                        absolute:ウィンドウの左上を基準点として配置<br>
+                        relative:配置物のデフォルトの位置を基準点として配置
+                    </td>
+                    <td class="another">
+                        親要素がrelativeの場合、親要素の左上がabsoluteの基準点になる<br>
+                        基本的にrelativeで配置して、重ねて表示したい時に子要素としてabsoluteを使うが良し
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">5</td>
+                    <td class="question">サイズとも被るが、pxと%の使い分け</td>
+                    <td class="answer">1と同文</td>
+                    <td class="another">
+                        px:基本的に親要素の左上を起点にする為、その指定位置よりブラウザサイズが下回ったら見切れる<br>
+                        % :1と同文
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">6</td>
+                    <td class="question">そもそもcssをhtmlファイル内に書くとき、どうやったら見やすく正確に書けるか</td>
+                    <td class="answer">htmlに直接書くことはほぼ無いから気にする必要なし</td>
+                    <td class="another">どうしても書くことになったら要素の順番で書いたらわかりやすいかも</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="width:98%;padding:0px;margin-top: 25px;" align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="question">質問内容(テキスト)</th>
+                    <th class="answer">回答</th>
+                    <th class="another">その他</th>
+                </tr>
+                <tr>
+                    <td class="questionNumber">1</td>
+                    <td class="question">書体はどこから持ってくるのか、フォルダー内にないといけないのか</td>
+                    <td class="answer">フォントファイルをプロジェクト内に置いておかないとダメ</td>
+                    <td class="another">プロジェクト内に置かなくてもネットから引っ張れる場合はURLでも可</td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">テキストの太さ、フォントサイズ、行間は毎回設定するのか</td>
+                    <td class="answer">デフォルトのままでよければ設定は不必要</td>
+                    <td class="another">
+                        デフォルトのテキストの設定を変えたい場合はpタグに対してスタイルの設定<br>
+                        そのあとに個別にクラスを振ってスタイルの設定
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="width:98%;padding:0px;margin-top: 25px;" align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="question">質問内容(class、id)</th>
+                    <th class="answer">回答</th>
+                    <th class="another">その他</th>
+                </tr>
+                <tr>
+                    <td class="questionNumber">1</td>
+                    <td class="question">１つしか登場しなそうなcssやjava scriptの設定を振るときは全部idでいいのか</td>
+                    <td class="answer">基本的にはclassをつけたいが1か所しか使わないcssはタグ内に直接記入でも可</td>
+                    <td class="another">
+                        javaScriptで読み込むときはタグで読み込めるが、<br>
+                        不必要なとこも読み込んでしまう為1か所の時でもidをつけないと駄目
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">リスト（ul,ol,li）の部分では、ulやolとliではそれぞれ全部class or idを振らなきゃいけないのか</td>
+                    <td class="answer">一度しかリストを使わない場合は降らなくてもおｋ</td>
+                    <td class="another">
+                        複数のリストを使って別のスタイルを適用させたい時は、classを振らないとダメ
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">質問２と同様、表(table)にはどう振るのがいいのか</td>
+                    <td class="answer">
+                        同じ見た目の表を作るならtable,tr,th,tdタグに対してスタイルを適用<br>
+                        同じレイアウトでも色とか違う見た目にしたい場合にclass付してやる
+                    </td>
+                    <td class="another">このhtmlファイル見てみれば大体わかる</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="width:98%;padding:0px;margin-top: 25px;" align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="question">質問内容(css)</th>
+                    <th class="answer">回答</th>
+                    <th class="another">その他</th>
+                </tr>
+                <tr>
+                    <td class="questionNumber">1</td>
+                    <td class="question">サイズ、位置指定のやる塩梅がわからない</td>
+                    <td class="answer">サイズや位置指定は基本的に全部の物にした方が良い</td>
+                    <td class="another">
+                        画像や動画などデフォのサイズで使いたい時などはしなくておｋ<br>
+                        ただし、ブラウザサイズによっては見切れるから基本的には指定はしたい
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">そもそもcssつけないといけないタグとつけなくていいタグの区別がつかない</td>
+                    <td class="answer">基本的にはbody以下のものすべてにcssは付けたい</td>
+                    <td class="another">実際に何か作るとわかるけどcss付けずに作れるものは無い</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

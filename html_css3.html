@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト関連のcss</title>
+    <meta name="description" content="text css">
+    <style>
+        h2{
+            width: 1000px; 
+            height: 30px; 
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--※参照　https://saruwakakun.com/html-css/basic/text-setting-->
+    <h1>テキスト関連のCSS</h1>
+    <div style="width: 1000px; height: 700px; position: relative;">
+        <h2>テキストの基本設定と装飾</h2>
+        <ol style="width: 500px; height: 700px; position: static;">
+            <li style="font-size: 25px;">
+                フォントサイズを設定<br/>
+                font-size: px or em
+            </li>
+            <li style="color: red;">
+                テキストの色を設定<br/>
+                color: 色名 or カラーコード
+            </li>
+            <li style="font-weight: bold;">
+                テキストの太さを設定<br/>
+                font-weight: 〇〇
+            </li>
+            <!--通常体や斜体など-->>
+            <li style="font-style: italic;">
+                テキストのフォントを設定<br/>
+                font-style: 〇〇
+            </li>
+            <li style="line-height: 2;">
+                行間を設定<br/>
+                line-height: 数字
+            </li>
+            <li style="letter-spacing: 0.3em;">
+                テキストの間隔を設定<br/>
+                letter-spacing: em（pxでもいける）
+            </li>
+            <li style="text-decoration: underline;">
+                テキストに装飾を設定<br/>
+                text-decoration: 〇〇
+            </li>
+            <li style="border: solid 1px blue;">
+                テキストに枠を付ける<br/>
+                border: 線の種類 線の太さ 色
+            </li>
+            <!--複数個所に引くことできる-->>
+            <li style="border-left: dashed 1px green;">
+                テキストの上下左右に線を引く<br/>
+                border-〇〇: 線の種類 線の太さ 色
+            </li>
+            <!--ゴシック体や明朝体など-->>
+            <li style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                テキストのフォントの種類を設定<br/>
+                font-family: フォント名
+            </li>
+        </ol>
+    </div>
+    <div style="width: 1000px; height: 1000px; position: relative;">
+        <h2>テキストの位置について</h2>
+        <p style="width: auto; height: auto; position: static;">
+            テキストを親の位置に対して左右中央に寄せる<br/>
+            text-align: left or center or right
+        </p>
+        <p style="text-align: left; width: auto; height: auto; position: static;">
+            left
+        </p>
+        <p style="text-align: center; width: auto; height: auto; position: static;">
+            center
+        </p>
+        <p style="text-align: right; width: auto; height: auto; position: static;">
+            right
+        </p>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
